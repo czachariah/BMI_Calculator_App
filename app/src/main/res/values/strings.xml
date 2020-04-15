@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">BMI-Calculator</string>
-    <string name="WeightLabelText">Weight</string>
-    <string name="HeightLabelText">Height</string>
-    <string name="WeightInputHintPounds">Enter weight in pounds</string>
+    <string name="Toggle1Text">Pounds and Inches</string>
+    <string name="Toggle2Text">Kilograms and Meters</string>
 </resources>
