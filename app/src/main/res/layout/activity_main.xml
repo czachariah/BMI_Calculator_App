@@ -14,6 +14,7 @@
         android:layout_marginTop="72dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="497dp"
+        android:checkedButton="@id/radioButton1"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,7 +50,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.985" />
 
     <TextView
         android:id="@+id/HeightLabel"
@@ -65,7 +66,114 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WeightLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/WeightLabel"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/BMILabel"
+        android:layout_width="117dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="246dp"
+        android:layout_marginBottom="320dp"
+        android:text="@string/BMILabelText"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HeightLabel"
+        app:layout_constraintVertical_bias="0.388" />
+
+    <EditText
+        android:id="@+id/WeightInput"
+        android:layout_width="198dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="432dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/WeightInputHint"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/WeightLabel"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/HeightInput"
+        android:layout_width="198dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="382dp"
+        android:ems="10"
+        android:hint="@string/HeightInputHint"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HeightLabel"
+        app:layout_constraintTop_toBottomOf="@+id/WeightInput" />
+
+    <TextView
+        android:id="@+id/BMICalculation"
+        android:layout_width="198dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="331dp"
+        android:background="#2500C853"
+        android:clickable="false"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BMILabel"
+        app:layout_constraintTop_toBottomOf="@+id/HeightInput" />
+
+    <Button
+        android:id="@+id/CalcBMIButton"
+        android:layout_width="222dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="234dp"
+        android:text="@string/calculateBMIButtonText"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BMILabel" />
+
+    <Button
+        android:id="@+id/GetAdviceButton"
+        android:layout_width="222dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="164dp"
+        android:text="@string/GetAdviceButtonText"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CalcBMIButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,4 +4,9 @@
     <string name="Toggle2Text">Kilograms and Meters</string>
     <string name="WeightLabelText">Weight:</string>
     <string name="HeightLabelText">Height:</string>
+    <string name="BMILabelText">BMI:</string>
+    <string name="WeightInputHint">Pounds</string>
+    <string name="HeightInputHint">Inches</string>
+    <string name="calculateBMIButtonText">Calculate BMI</string>
+    <string name="GetAdviceButtonText">Get Advice</string>
 </resources>
