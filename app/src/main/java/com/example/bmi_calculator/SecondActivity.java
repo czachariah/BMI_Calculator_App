@@ -6,6 +6,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * @author Chris Zachariah (cvz2)
+ * @author Anthony Topol (at877)
+ */
+
 public class SecondActivity extends AppCompatActivity
 {
     char type = 'U';

@@ -11,6 +11,10 @@ import android.widget.TextView;
 import android.view.View;
 import android.widget.Toast;
 
+/**
+ * @author Chris Zachariah (cvz2)
+ * @author Anthony Topol (at877)
+ */
 public class MainActivity extends AppCompatActivity
 {
     final char UNDER_WEIGHT = 'U';
