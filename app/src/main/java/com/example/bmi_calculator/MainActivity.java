@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Toast;
 
 /**
+ * This is the back-end class of the first screen for the user to get their BMI.
  * @author Chris Zachariah (cvz2)
  * @author Anthony Topol (at877)
  */
@@ -39,6 +40,10 @@ public class MainActivity extends AppCompatActivity
     Button calcBMIButton;
     Button getAdviceButton;
 
+    /**
+     * This method will listen for button clicks and do the necessary actions.
+     * @param savedInstanceState the current instance state
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {

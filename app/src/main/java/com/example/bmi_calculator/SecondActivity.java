@@ -7,10 +7,10 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
+ * This is the back-end for the second screen where the user will receive some advice.
  * @author Chris Zachariah (cvz2)
  * @author Anthony Topol (at877)
  */
-
 public class SecondActivity extends AppCompatActivity
 {
     char type = 'U';
@@ -19,6 +19,10 @@ public class SecondActivity extends AppCompatActivity
 
     ImageView picOfType;
 
+    /**
+     * This method will control what picture and text will be displayed to the user.
+     * @param savedInstanceState the current instance state
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
